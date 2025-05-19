@@ -147,7 +147,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
       {/* Features Section */}
       <section className={`py-16 ${theme === "dark" ? "bg-gray-800" : "bg-gradient-to-r from-purple-100 to-pink-100"}`}>

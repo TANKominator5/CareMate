@@ -52,6 +52,12 @@ const Navbar = () => {
               Analytics
             </Link>
             <Link
+              href="/medications"
+              className={`${theme === "dark" ? "text-white" : "text-gray-700"} hover:text-purple-500 transition-colors`}
+            >
+              Medications
+            </Link>
+            <Link
               href="/about"
               className={`${theme === "dark" ? "text-white" : "text-gray-700"} hover:text-purple-500 transition-colors`}
             >
@@ -131,6 +137,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Analytics
+            </Link>
+            <Link
+              href="/medications"
+              className={`block py-2 px-4 rounded-lg ${theme === "dark" ? "text-white hover:bg-gray-800" : "text-gray-700 hover:bg-gray-100"}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Medications
             </Link>
             <Link
               href="/about"
