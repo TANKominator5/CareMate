@@ -1,4 +1,3 @@
-
 "use client"
 
 import Head from "next/head"
@@ -6,6 +5,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { useTheme } from "next-themes"
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import { Calendar, PieChart, BarChart, TrendingUp, Filter, ChevronDown, ChevronRight } from "lucide-react"
 
 // Mock data for analytics
@@ -365,11 +365,8 @@ export default function Analytics() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   )
 }
-
-
-
-
-

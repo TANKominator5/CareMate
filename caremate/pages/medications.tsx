@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { useTheme } from "next-themes"
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import { Plus, Search, Filter, MoreVertical, Edit, Trash2, Clock, CheckCircle, AlertCircle } from "lucide-react"
 
 // Mock data for medications
@@ -245,6 +246,8 @@ export default function Medications() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   )
 }
