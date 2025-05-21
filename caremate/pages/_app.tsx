@@ -1,8 +1,8 @@
 // pages/_app.tsx
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
-import { AuthProvider } from '../context/AuthContext'; // Adjust path if your context folder is not at the root
-import "../styles/globals.css"; // This is your existing global styles import
+import { AuthProvider } from '../context/AuthContext'; // Path relative to pages/
+import "../styles/globals.css"; // Correct path to your global styles
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
