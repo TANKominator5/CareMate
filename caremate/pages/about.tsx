@@ -109,12 +109,10 @@ export default function About() {
                   healthcare costs.
                 </p>
                 <p>
-                  Our founder, Dr. Sarah Johnson, witnessed this challenge firsthand in her clinical practice. She saw
-                  patients with chronic conditions who were unable to manage complex medication regimens, leading to
-                  preventable hospitalizations and complications.
+                  Our founder witnessed this challenge firsthand in clinical practice. They saw patients with chronic conditions who were unable to manage complex medication regimens, leading to preventable hospitalizations and complications.
                 </p>
                 <p>
-                  In 2020, Dr. Johnson assembled a team of healthcare professionals, software engineers, and UX
+                  So we  assembled a team of healthcare professionals, software engineers, and UX
                   designers to create a solution. The result was CareMate - a platform designed to make medication
                   management simple, engaging, and effective.
                 </p>
