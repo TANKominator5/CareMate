@@ -78,7 +78,7 @@ export default function Features() {
         {
           title: "Mobile Friendly",
           description:
-            "Access MediTrack from any device - desktop, tablet, or smartphone. Your data syncs seamlessly across all platforms.",
+            "Access CareMate from any device - desktop, tablet, or smartphone. Your data syncs seamlessly across all platforms.",
           icon: <Smartphone className={`w-6 h-6 ${theme === "dark" ? "text-blue-400" : "text-blue-600"}`} />,
         },
         {
@@ -96,7 +96,7 @@ export default function Features() {
         {
           title: "Fast Performance",
           description:
-            "Enjoy a smooth, responsive experience with minimal loading times. MediTrack is optimized for speed and efficiency.",
+            "Enjoy a smooth, responsive experience with minimal loading times. CareMate is optimized for speed and efficiency.",
           icon: <Zap className={`w-6 h-6 ${theme === "dark" ? "text-blue-400" : "text-blue-600"}`} />,
         },
       ],
@@ -106,8 +106,8 @@ export default function Features() {
   return (
     <>
       <Head>
-        <title>Features - MediTrack</title>
-        <meta name="description" content="Explore the features of MediTrack - your medication tracking solution" />
+        <title>Features - CareMate</title>
+        <meta name="description" content="Explore the features of CareMate - your medication tracking solution" />
       </Head>
 
       <Navbar />
@@ -127,7 +127,7 @@ export default function Features() {
             <p
               className={`text-lg max-w-3xl mx-auto mb-8 ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}
             >
-              MediTrack combines intuitive design with powerful functionality to help you manage your medications
+              CareMate combines intuitive design with powerful functionality to help you manage your medications
               effectively and improve your health outcomes.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -208,7 +208,7 @@ export default function Features() {
                 What Our Users Say
               </h2>
               <p className={`max-w-2xl mx-auto ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
-                Thousands of people use MediTrack to manage their medications and improve their health outcomes.
+                Thousands of people use CareMate to manage their medications and improve their health outcomes.
               </p>
             </div>
 
@@ -216,13 +216,13 @@ export default function Features() {
               {[
                 {
                   quote:
-                    "MediTrack has completely transformed how I manage my medications. The reminders are a lifesaver!",
+                    "CareMate has completely transformed how I manage my medications. The reminders are a lifesaver!",
                   author: "Sarah J.",
                   role: "Living with Diabetes",
                 },
                 {
                   quote:
-                    "As a caregiver for my elderly mother, MediTrack helps me ensure she takes the right medications at the right time.",
+                    "As a caregiver for my elderly mother, CareMate helps me ensure she takes the right medications at the right time.",
                   author: "Michael T.",
                   role: "Family Caregiver",
                 },
@@ -274,7 +274,7 @@ export default function Features() {
                 Frequently Asked Questions
               </h2>
               <p className={`max-w-2xl mx-auto ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
-                Find answers to common questions about MediTrack and its features.
+                Find answers to common questions about CareMate and its features.
               </p>
             </div>
 
@@ -282,9 +282,9 @@ export default function Features() {
               <div className="space-y-6">
                 {[
                   {
-                    question: "Is MediTrack free to use?",
+                    question: "Is CareMate free to use?",
                     answer:
-                      "MediTrack offers a free basic plan with limited features. Premium plans are available for users who need advanced analytics, unlimited medications, and family sharing capabilities.",
+                      "CareMate offers a free basic plan with limited features. Premium plans are available for users who need advanced analytics, unlimited medications, and family sharing capabilities.",
                   },
                   {
                     question: "How secure is my health information?",
@@ -292,14 +292,14 @@ export default function Features() {
                       "We take security seriously. All your data is encrypted both in transit and at rest. We comply with healthcare privacy standards and never share your personal information with third parties without your explicit consent.",
                   },
                   {
-                    question: "Can I use MediTrack for my family members?",
+                    question: "Can I use CareMate for my family members?",
                     answer:
                       "Yes! With our family plan, you can manage medications for multiple family members from a single account, making it perfect for caregivers and parents.",
                   },
                   {
-                    question: "Does MediTrack work offline?",
+                    question: "Does CareMate work offline?",
                     answer:
-                      "Yes, MediTrack has offline capabilities. You can view your medication schedule and mark medications as taken even without an internet connection. Data will sync once you're back online.",
+                      "Yes, CareMate has offline capabilities. You can view your medication schedule and mark medications as taken even without an internet connection. Data will sync once you're back online.",
                   },
                   {
                     question: "Can I export my medication data?",
@@ -329,7 +329,7 @@ export default function Features() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6 text-white">Ready to Take Control of Your Medications?</h2>
             <p className="text-lg mb-8 text-white opacity-90 max-w-2xl mx-auto">
-              Join thousands of users who have improved their medication adherence with MediTrack.
+              Join thousands of users who have improved their medication adherence with CareMate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -357,7 +357,7 @@ export default function Features() {
               <div className="flex items-center mb-4">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mr-2"></div>
                 <span className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
-                  MediTrack
+                  CareMate
                 </span>
               </div>
               <p className={`mb-4 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>
@@ -449,7 +449,7 @@ export default function Features() {
             className={`mt-12 pt-8 border-t ${theme === "dark" ? "border-gray-800 text-gray-400" : "border-gray-200 text-gray-600"}`}
           >
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p>&copy; {new Date().getFullYear()} MediTrack. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} CareMate. All rights reserved.</p>
               <div className="mt-4 md:mt-0">
                 <div className="flex space-x-4">
                   <Link href="#" className="hover:text-purple-500 transition-colors">

@@ -162,8 +162,8 @@ export default function SignUp() {
   return (
     <>
       <Head>
-        <title>Sign Up - MediTrack</title>
-        <meta name="description" content="Create your MediTrack account" />
+        <title>Sign Up - CareMate</title>
+        <meta name="description" content="Create your CareMate account" />
       </Head>
       <Navbar />
       <main className={`min-h-screen pt-20 pb-12 ${theme === "dark" ? "bg-gray-900" : "bg-gradient-to-r from-blue-100 to-white"}`}>

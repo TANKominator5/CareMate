@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mr-2"></div>
               <span className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
-                MediTrack
+                CareMate
               </span>
             </div>
             <p className={`mb-4 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>
@@ -104,7 +104,7 @@ const Footer = () => {
           className={`mt-12 pt-8 border-t ${theme === "dark" ? "border-gray-800 text-gray-400" : "border-gray-200 text-gray-600"}`}
         >
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {new Date().getFullYear()} MediTrack. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} CareMate. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
               <div className="flex space-x-4">
                 <Link href="#" className="hover:text-purple-500 transition-colors">

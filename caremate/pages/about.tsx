@@ -11,40 +11,12 @@ import Footer from "../components/Footer"
 export default function About() {
   const { theme } = useTheme()
 
-  // Team members data
-  const teamMembers = [
-    {
-      name: "Dr. Sarah Johnson",
-      role: "Founder & CEO",
-      bio: "Dr. Johnson founded MediTrack after witnessing medication adherence challenges in her clinical practice. With over 15 years of experience in healthcare technology, she leads our mission to improve health outcomes.",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Michael Chen",
-      role: "Chief Technology Officer",
-      bio: "Michael brings 12+ years of software development expertise to MediTrack. He previously led engineering teams at leading health tech companies and is passionate about creating intuitive healthcare solutions.",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Priya Patel",
-      role: "Head of Product",
-      bio: "Priya oversees product strategy and user experience at MediTrack. Her background in healthcare UX design helps ensure our platform remains accessible and effective for users of all ages.",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "James Wilson",
-      role: "Medical Advisor",
-      bio: "Dr. Wilson is a board-certified physician specializing in geriatric medicine. He provides clinical guidance to ensure MediTrack meets the complex medication management needs of our users.",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-  ]
-
   // Company values
   const companyValues = [
     {
       title: "User-Centered Design",
       description:
-        "We design every feature with our users in mind, ensuring MediTrack is accessible and beneficial for people of all ages and technical abilities.",
+        "We design every feature with our users in mind, ensuring CareMate is accessible and beneficial for people of all ages and technical abilities.",
     },
     {
       title: "Evidence-Based Approach",
@@ -66,8 +38,8 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Us - MediTrack</title>
-        <meta name="description" content="Learn about MediTrack's mission, team, and values" />
+        <title>About Us - CareMate</title>
+        <meta name="description" content="Learn about CareMate's mission, team, and values" />
       </Head>
 
       <Navbar />
@@ -87,7 +59,7 @@ export default function About() {
                   </span>
                 </h1>
                 <p className={`text-lg mb-6 ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
-                  At MediTrack, we're dedicated to improving medication adherence and health outcomes through technology
+                  At CareMate, we're dedicated to improving medication adherence and health outcomes through technology
                   that's accessible, intuitive, and effective.
                 </p>
                 <p className={`text-lg ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
@@ -132,7 +104,7 @@ export default function About() {
               </h2>
               <div className={`space-y-6 ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
                 <p>
-                  MediTrack was born from a simple observation: despite advances in medical treatments, many people
+                  CareMate was born from a simple observation: despite advances in medical treatments, many people
                   struggle to take their medications as prescribed, leading to poorer health outcomes and increased
                   healthcare costs.
                 </p>
@@ -143,7 +115,7 @@ export default function About() {
                 </p>
                 <p>
                   In 2020, Dr. Johnson assembled a team of healthcare professionals, software engineers, and UX
-                  designers to create a solution. The result was MediTrack - a platform designed to make medication
+                  designers to create a solution. The result was CareMate - a platform designed to make medication
                   management simple, engaging, and effective.
                 </p>
                 <p>
@@ -153,7 +125,7 @@ export default function About() {
                   accessible technology.
                 </p>
                 <p>
-                  Today, MediTrack continues to innovate in the digital health space, partnering with healthcare
+                  Today, CareMate continues to innovate in the digital health space, partnering with healthcare
                   providers, pharmacies, and research institutions to develop new ways to support medication management
                   and improve patient outcomes.
                 </p>
@@ -187,31 +159,31 @@ export default function About() {
         {/* Team Section */}
         <section className={`py-16 ${theme === "dark" ? "bg-gray-900" : "bg-white"}`}>
           <div className="container mx-auto px-4">
-            <h2 className={`text-3xl font-bold mb-12 text-center ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
-              Meet Our Team
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {teamMembers.map((member, index) => (
-                <div
-                  key={index}
-                  className={`rounded-xl overflow-hidden ${theme === "dark" ? "bg-gray-800" : "bg-gray-50"} shadow-sm`}
-                >
-                  <div className="aspect-square relative">
-                    <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+            <div className={`max-w-4xl mx-auto rounded-3xl shadow-2xl p-10 md:p-14 ${theme === "dark" ? "bg-gradient-to-br from-purple-900/80 to-gray-900 border border-purple-800" : "bg-gradient-to-br from-purple-100 to-pink-100 border border-purple-200"}`}> 
+              <h2 className={`text-3xl font-bold mb-6 text-center ${theme === "dark" ? "text-white" : "text-gray-800"}`}>Meet Our Team</h2>
+              <div className="max-w-2xl mx-auto text-center mb-10">
+                <p className={`text-xl md:text-2xl font-semibold tracking-wide ${theme === "dark" ? "text-purple-200" : "text-purple-700"} drop-shadow-sm`}>
+                  We are a passionate group of healthcare professionals, technologists, and designers dedicated to making medication management simple, effective, and accessible for everyone. Our combined expertise in medicine, software engineering, and user experience powers CareMate's mission.
+                </p>
+              </div>
+              <div className="flex flex-col md:flex-row justify-center gap-8">
+                <div className={`flex-1 flex flex-col items-center p-8 rounded-2xl shadow-lg transition-transform hover:scale-105 min-w-[260px] ${theme === "dark" ? "bg-gradient-to-br from-purple-900/80 to-gray-800 text-white" : "bg-gradient-to-br from-purple-100 to-pink-100 text-gray-800"}`}
+                  style={{maxWidth: 400}}>
+                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4 shadow-lg">
+                    <svg width="40" height="40" fill="none" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/></svg>
                   </div>
-                  <div className="p-6">
-                    <h3 className={`text-xl font-semibold mb-1 ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
-                      {member.name}
-                    </h3>
-                    <p
-                      className={`text-sm mb-3 ${theme === "dark" ? "text-purple-400" : "text-purple-600"} font-medium`}
-                    >
-                      {member.role}
-                    </p>
-                    <p className={`text-sm ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>{member.bio}</p>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-2">A Diverse & Expert Team</h3>
+                  <p className="text-base opacity-90 text-center">We are clinicians, engineers, and designers working together to empower you on your health journey. Our shared vision is to make medication adherence effortless and stress-free for all.</p>
                 </div>
-              ))}
+                <div className={`flex-1 flex flex-col items-center p-8 rounded-2xl shadow-lg transition-transform hover:scale-105 min-w-[260px] ${theme === "dark" ? "bg-gradient-to-br from-pink-900/80 to-gray-800 text-white" : "bg-gradient-to-br from-pink-100 to-purple-100 text-gray-800"}`}
+                  style={{maxWidth: 400}}>
+                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-purple-500 mb-4 shadow-lg">
+                    <svg width="40" height="40" fill="none" viewBox="0 0 24 24"><path d="M17 10.5V7c0-2.21-1.79-4-4-4s-4 1.79-4 4v3.5M12 17v2m-6-2v2m12-2v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Driven by Compassion</h3>
+                  <p className="text-base opacity-90 text-center">We care deeply about our users. Every feature is built with empathy, inspired by real stories and real needs. Your well-being is at the heart of everything we do.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -238,9 +210,9 @@ export default function About() {
                       <div>
                         <p className={theme === "dark" ? "text-white" : "text-gray-800"}>Our Office</p>
                         <p className={theme === "dark" ? "text-gray-300" : "text-gray-600"}>
-                          123 Health Avenue, Suite 500
+                          9 Devolper More, 11 Avenue,
                           <br />
-                          San Francisco, CA 94107
+                          IT Chawk, Kolkata 700010
                         </p>
                       </div>
                     </div>
@@ -250,7 +222,7 @@ export default function About() {
                       />
                       <div>
                         <p className={theme === "dark" ? "text-white" : "text-gray-800"}>Phone</p>
-                        <p className={theme === "dark" ? "text-gray-300" : "text-gray-600"}>+1 (555) 123-4567</p>
+                        <p className={theme === "dark" ? "text-gray-300" : "text-gray-600"}>+91 70448 95961</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -260,7 +232,7 @@ export default function About() {
                       <div>
                         <p className={theme === "dark" ? "text-white" : "text-gray-800"}>Email</p>
                         <p className={theme === "dark" ? "text-gray-300" : "text-gray-600"}>
-                          contact@meditrack.example.com
+                          contact@caremate.co.in
                         </p>
                       </div>
                     </div>

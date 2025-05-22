@@ -109,7 +109,7 @@ export default function AddMedication() {
   return (
     <>
       <Head>
-        <title>Add Medication - MediTrack</title>
+        <title>Add Medication - CareMate</title>
         <meta name="description" content="Add a new medication to track" />
       </Head>
 

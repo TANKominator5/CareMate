@@ -12,8 +12,8 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>MediTrack - Your Medication Tracking Solution</title>
-        <meta name="description" content="Track your medications, get reminders, and view analytics with MediTrack" />
+        <title>CareMate - Your Medication Tracking Solution</title>
+        <meta name="description" content="Track your medications, get reminders, and view analytics with CareMate" />
       </Head>
 
       <Navbar />
@@ -34,7 +34,7 @@ export default function Index() {
                 </span>
               </h1>
               <p className={`text-lg mb-8 ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
-                MediTrack helps you stay on top of your medication schedule with timely reminders and comprehensive
+                CareMate helps you stay on top of your medication schedule with timely reminders and comprehensive
                 analytics to improve your health journey.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -157,7 +157,7 @@ export default function Index() {
               Key Features
             </h2>
             <p className={`max-w-2xl mx-auto ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
-              MediTrack offers everything you need to manage your medications effectively and improve your health
+              CareMate offers everything you need to manage your medications effectively and improve your health
               outcomes.
             </p>
           </div>
@@ -209,7 +209,7 @@ export default function Index() {
               How It Works
             </h2>
             <p className={`max-w-2xl mx-auto ${theme === "dark" ? "text-gray-300" : "text-gray-600"}`}>
-              Getting started with MediTrack is easy. Follow these simple steps to take control of your medication
+              Getting started with CareMate is easy. Follow these simple steps to take control of your medication
               schedule.
             </p>
           </div>
@@ -219,7 +219,7 @@ export default function Index() {
               {
                 step: "1",
                 title: "Create Your Account",
-                description: "Sign up for a free account to get started with MediTrack.",
+                description: "Sign up for a free account to get started with CareMate.",
               },
               {
                 step: "2",
@@ -257,7 +257,7 @@ export default function Index() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Take Control?</h2>
           <p className="text-lg mb-8 text-white opacity-90 max-w-2xl mx-auto">
-            Join thousands of users who have improved their medication adherence with MediTrack.
+            Join thousands of users who have improved their medication adherence with CareMate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -284,7 +284,7 @@ export default function Index() {
               <div className="flex items-center mb-4">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mr-2"></div>
                 <span className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
-                  MediTrack
+                  CareMate
                 </span>
               </div>
               <p className={`mb-4 ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>
@@ -376,7 +376,7 @@ export default function Index() {
             className={`mt-12 pt-8 border-t ${theme === "dark" ? "border-gray-800 text-gray-400" : "border-gray-200 text-gray-600"}`}
           >
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p>&copy; {new Date().getFullYear()} MediTrack. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} CareMate. All rights reserved.</p>
               <div className="mt-4 md:mt-0">
                 <div className="flex space-x-4">
                   <Link href="#" className="hover:text-purple-500 transition-colors">

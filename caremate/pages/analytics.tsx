@@ -173,19 +173,31 @@ export default function Analytics() {
               </div>
 
               <div className="flex flex-col md:flex-row items-center">
-                {/* Pie Chart Placeholder */}
-                <div className="w-48 h-48 relative mb-4 md:mb-0">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 rounded-full border-8 border-purple-500 flex items-center justify-center">
-                      <span className={`text-2xl font-bold ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
-                        85%
-                      </span>
-                    </div>
-                    <div
-                      className="absolute top-0 right-0 w-32 h-32 rounded-full border-8 border-transparent border-t-pink-500 border-r-pink-500"
-                      style={{ transform: "rotate(54deg)" }}
-                    ></div>
-                  </div>
+                {/* Pie Chart Placeholder - Improved for graphical accuracy */}
+                <div className="w-48 h-48 relative mb-4 md:mb-0 flex items-center justify-center">
+                  <svg viewBox="0 0 36 36" className="w-40 h-40">
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
+                      fill="none"
+                      stroke={theme === "dark" ? "#6D28D9" : "#A21CAF"}
+                      strokeWidth="4"
+                      strokeDasharray="85, 15"
+                      strokeLinecap="round"
+                    />
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
+                      fill="none"
+                      stroke={theme === "dark" ? "#DB2777" : "#EC4899"}
+                      strokeWidth="4"
+                      strokeDasharray="0, 100"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                  <span className={`absolute text-2xl font-bold ${theme === "dark" ? "text-white" : "text-gray-800"}`}>85%</span>
                 </div>
 
                 {/* Legend */}

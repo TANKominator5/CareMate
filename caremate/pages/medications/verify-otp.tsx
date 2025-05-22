@@ -108,7 +108,7 @@ export default function VerifyOtpPage() {
   return (
     <>
       <Head>
-        <title>Verify Email - MediTrack</title>
+        <title>Verify Email - CareMate</title>
         <meta name="description" content="Verify your email with the token sent to you." />
       </Head>
       <Navbar />
