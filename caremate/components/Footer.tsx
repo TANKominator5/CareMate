@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 
 const Footer = () => {
   const { theme } = useTheme()
@@ -12,7 +13,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mr-2"></div>
+              <Image
+                src="/logo2.png"
+                alt="CareMate Logo"
+                width={32}
+                height={32}
+                className="mr-2 rounded-full"
+                priority
+              />
               <span className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
                 CareMate
               </span>

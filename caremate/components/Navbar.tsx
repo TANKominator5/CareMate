@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 import { Menu, X, Moon, Sun, LogOut, UserCircle, BriefcaseMedical, LineChart } from "lucide-react";
 import { useAuth } from "../context/AuthContext"; // Adjust path if needed
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 interface NavLink {
   href: string;
@@ -76,7 +77,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center" onClick={closeMenu}>
-            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mr-2"></div>
+            <Image
+              src="/logo2.png" // Place your logo.png in the public/ directory
+              alt="CareMate Logo"
+              width={32}
+              height={32}
+              className="mr-2 rounded-full"
+              priority
+            />
             <span className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-gray-800"}`}>CareMate</span>
           </Link>
 
