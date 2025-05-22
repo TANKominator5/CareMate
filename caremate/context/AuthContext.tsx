@@ -14,7 +14,7 @@ interface AuthContextType {
   signInWithPassword: (credentials: SignUpWithPasswordCredentials) => Promise<{ data: { user: User | null; session: Session | null; }; error: AuthError | null; }>;
   signInWithGoogle: () => Promise<{ data: { provider?: any; url?: string | null; }; error: AuthError | null; }>;
   signOut: () => Promise<{ error: AuthError | null }>;
-  verifyOtp: (params: { email: string; token: string; type: 'signup' | 'email_change' | 'recovery' | 'sms' | 'phone_change' }) => Promise<{ data: { user: User | null; session: Session | null; }; error: AuthError | null; }>;
+  verifyOtp: (params: { email: string; token: string; type: 'signup' | 'email_change' | 'recovery' }) => Promise<{ data: { user: User | null; session: Session | null; }; error: AuthError | null; }>;
   updateUserFullName: (fullName: string) => Promise<any>; // Replace 'any' with more specific type if known
 }
 
@@ -64,7 +64,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     );
 
     return () => {
-      authListener?.unsubscribe();
+      authListener?.subscription.unsubscribe();
     };
   }, [router]);
 
@@ -90,12 +90,12 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     verifyOtp: (params) =>
       supabase.auth.verifyOtp(params),
     updateUserFullName: (fullName: string) => {
-        if (user) {
-            return supabase.auth.updateUser({
-                data: { full_name: fullName }
-            });
-        }
-        return Promise.reject(new Error("User not logged in"));
+      if (user) {
+        return supabase.auth.updateUser({
+          data: { full_name: fullName }
+        });
+      }
+      return Promise.reject(new Error("User not logged in"));
     }
   };
 

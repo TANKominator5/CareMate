@@ -10,6 +10,7 @@ import Footer from '../../components/Footer'; // Adjust path
 import Head from "next/head";
 import { useTheme } from "next-themes";
 import { AlertCircle, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 export default function VerifyOtpPage() {
   const { theme } = useTheme();
